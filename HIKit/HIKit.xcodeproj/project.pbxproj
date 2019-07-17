@@ -11,6 +11,10 @@
 		18B90BB122DDCD9400006D85 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18B90BB022DDCD9400006D85 /* Assets.xcassets */; };
 		18B90BB422DDCD9400006D85 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18B90BB222DDCD9400006D85 /* LaunchScreen.storyboard */; };
 		18B90BB722DDCD9400006D85 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B90BB622DDCD9400006D85 /* main.m */; };
+		18B90BC322DEF54200006D85 /* HIFoundation.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B90BC222DEF54200006D85 /* HIFoundation.m */; };
+		18B90BC722DEF70900006D85 /* HIApplication.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B90BC622DEF70900006D85 /* HIApplication.m */; };
+		18B90BCA22DEF9E200006D85 /* HIColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B90BC922DEF9E200006D85 /* HIColor.m */; };
+		18B90BCD22DEFCD500006D85 /* HIConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B90BCC22DEFCD500006D85 /* HIConfiguration.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +26,16 @@
 		18B90BB522DDCD9400006D85 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		18B90BB622DDCD9400006D85 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		18B90BBE22DDCE4900006D85 /* HIKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HIKit.h; sourceTree = "<group>"; };
+		18B90BC022DEF43800006D85 /* HIToolURL.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HIToolURL.h; sourceTree = "<group>"; };
+		18B90BC122DEF54200006D85 /* HIFoundation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HIFoundation.h; sourceTree = "<group>"; };
+		18B90BC222DEF54200006D85 /* HIFoundation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HIFoundation.m; sourceTree = "<group>"; };
+		18B90BC422DEF64500006D85 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		18B90BC522DEF70900006D85 /* HIApplication.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HIApplication.h; sourceTree = "<group>"; };
+		18B90BC622DEF70900006D85 /* HIApplication.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HIApplication.m; sourceTree = "<group>"; };
+		18B90BC822DEF9E200006D85 /* HIColor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HIColor.h; sourceTree = "<group>"; };
+		18B90BC922DEF9E200006D85 /* HIColor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HIColor.m; sourceTree = "<group>"; };
+		18B90BCB22DEFCD500006D85 /* HIConfiguration.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HIConfiguration.h; sourceTree = "<group>"; };
+		18B90BCC22DEFCD500006D85 /* HIConfiguration.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HIConfiguration.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,7 +79,16 @@
 		18B90BBD22DDCDB300006D85 /* HIKit */ = {
 			isa = PBXGroup;
 			children = (
+				18B90BC522DEF70900006D85 /* HIApplication.h */,
+				18B90BC622DEF70900006D85 /* HIApplication.m */,
+				18B90BC822DEF9E200006D85 /* HIColor.h */,
+				18B90BC922DEF9E200006D85 /* HIColor.m */,
+				18B90BCB22DEFCD500006D85 /* HIConfiguration.h */,
+				18B90BCC22DEFCD500006D85 /* HIConfiguration.m */,
+				18B90BC122DEF54200006D85 /* HIFoundation.h */,
+				18B90BC222DEF54200006D85 /* HIFoundation.m */,
 				18B90BBE22DDCE4900006D85 /* HIKit.h */,
+				18B90BC022DEF43800006D85 /* HIToolURL.h */,
 			);
 			path = HIKit;
 			sourceTree = "<group>";
@@ -74,9 +97,10 @@
 			isa = PBXGroup;
 			children = (
 				18B90BB022DDCD9400006D85 /* Assets.xcassets */,
-				18B90BB222DDCD9400006D85 /* LaunchScreen.storyboard */,
 				18B90BB522DDCD9400006D85 /* Info.plist */,
+				18B90BB222DDCD9400006D85 /* LaunchScreen.storyboard */,
 				18B90BB622DDCD9400006D85 /* main.m */,
+				18B90BC422DEF64500006D85 /* PrefixHeader.pch */,
 			);
 			path = SupportFiles;
 			sourceTree = "<group>";
@@ -151,7 +175,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				18B90BB722DDCD9400006D85 /* main.m in Sources */,
+				18B90BC322DEF54200006D85 /* HIFoundation.m in Sources */,
 				18B90BA922DDCD9200006D85 /* AppDelegate.m in Sources */,
+				18B90BC722DEF70900006D85 /* HIApplication.m in Sources */,
+				18B90BCA22DEF9E200006D85 /* HIColor.m in Sources */,
+				18B90BCD22DEFCD500006D85 /* HIConfiguration.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,6 +315,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = FLBV4WVC9V;
+				GCC_PREFIX_HEADER = ./HIKit/SupportFiles/PrefixHeader.pch;
 				INFOPLIST_FILE = "$(SRCROOT)/HIKit/SupportFiles/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -305,6 +334,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = FLBV4WVC9V;
+				GCC_PREFIX_HEADER = ./HIKit/SupportFiles/PrefixHeader.pch;
 				INFOPLIST_FILE = "$(SRCROOT)/HIKit/SupportFiles/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (

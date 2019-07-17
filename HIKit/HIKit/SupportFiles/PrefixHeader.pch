@@ -1,0 +1,14 @@
+//
+//  PrefixHeader.pch
+//  HIKit
+//
+//  Created by Apple on 2019/7/17.
+//  Copyright © 2019 MR-HI. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#import "HIKit.h"
+
+#endif /* PrefixHeader_pch */
