@@ -10,7 +10,7 @@
 
 @implementation HIConfiguration
 
-+ (instancetype)sharedConfigutation {
++ (instancetype)sharedConfiguration {
     static HIConfiguration *configuration = nil;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
@@ -20,11 +20,47 @@
 }
 
 + (void)setLogEnable:(BOOL)enable {
-    [[self sharedConfigutation] setLogEnable:enable];
+    [[self sharedConfiguration] setLogEnable:enable];
 }
 
 + (BOOL)logEnable {
-    return [[self sharedConfigutation] logEnable];
+    return [[self sharedConfiguration] logEnable];
+}
+
++ (void)setThemeColor:(UIColor *)themeColor {
+    [[self sharedConfiguration] setThemeColor:themeColor];
+}
+
++ (UIColor *)themeColor {
+    if ([[self sharedConfiguration] themeColor]) {
+        return [[self sharedConfiguration] themeColor];
+    } else {
+        return HICOLORWHITE;
+    }
+}
+
++ (void)setBackgroundColor:(UIColor *)backgroundColor {
+    [[self sharedConfiguration] setBackColor:backgroundColor];
+}
+
++ (UIColor *)backgroundColor {
+    return [[self sharedConfiguration] backColor];
+}
+
++ (void)setNavigationBarBackgroundColor:(UIColor *)color {
+    [[UINavigationBar appearance] setBackgroundColor:color];
+}
+
++ (void)setNavigationBarBackgroundImage:(UIImage *)image {
+    [[UINavigationBar appearance] setBackgroundImage:image forBarMetrics:UIBarMetricsDefault];
+}
+
++ (void)setShowNavigationBarShadow:(BOOL)show {
+    if (show) {
+        [[UINavigationBar appearance] setShadowImage:nil];
+    } else {
+        [[UINavigationBar appearance] setShadowImage:[[UIImage alloc] init]];
+    }
 }
 
 @end

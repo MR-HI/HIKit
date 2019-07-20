@@ -15,6 +15,8 @@
 		18B90BC722DEF70900006D85 /* HIApplication.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B90BC622DEF70900006D85 /* HIApplication.m */; };
 		18B90BCA22DEF9E200006D85 /* HIColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B90BC922DEF9E200006D85 /* HIColor.m */; };
 		18B90BCD22DEFCD500006D85 /* HIConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B90BCC22DEFCD500006D85 /* HIConfiguration.m */; };
+		18B90BD322E04D1D00006D85 /* HIImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B90BD222E04D1D00006D85 /* HIImage.m */; };
+		18B90BD622E160D200006D85 /* HIUserDefaults.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B90BD522E160D200006D85 /* HIUserDefaults.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +38,11 @@
 		18B90BC922DEF9E200006D85 /* HIColor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HIColor.m; sourceTree = "<group>"; };
 		18B90BCB22DEFCD500006D85 /* HIConfiguration.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HIConfiguration.h; sourceTree = "<group>"; };
 		18B90BCC22DEFCD500006D85 /* HIConfiguration.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HIConfiguration.m; sourceTree = "<group>"; };
+		18B90BD122E04D1D00006D85 /* HIImage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HIImage.h; sourceTree = "<group>"; };
+		18B90BD222E04D1D00006D85 /* HIImage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HIImage.m; sourceTree = "<group>"; };
+		18B90BD422E160D200006D85 /* HIUserDefaults.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HIUserDefaults.h; sourceTree = "<group>"; };
+		18B90BD522E160D200006D85 /* HIUserDefaults.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HIUserDefaults.m; sourceTree = "<group>"; };
+		18B90BD722E1615500006D85 /* HIKey.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HIKey.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,8 +94,13 @@
 				18B90BCC22DEFCD500006D85 /* HIConfiguration.m */,
 				18B90BC122DEF54200006D85 /* HIFoundation.h */,
 				18B90BC222DEF54200006D85 /* HIFoundation.m */,
+				18B90BD122E04D1D00006D85 /* HIImage.h */,
+				18B90BD222E04D1D00006D85 /* HIImage.m */,
+				18B90BD722E1615500006D85 /* HIKey.h */,
 				18B90BBE22DDCE4900006D85 /* HIKit.h */,
 				18B90BC022DEF43800006D85 /* HIToolURL.h */,
+				18B90BD422E160D200006D85 /* HIUserDefaults.h */,
+				18B90BD522E160D200006D85 /* HIUserDefaults.m */,
 			);
 			path = HIKit;
 			sourceTree = "<group>";
@@ -174,8 +186,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18B90BD322E04D1D00006D85 /* HIImage.m in Sources */,
 				18B90BB722DDCD9400006D85 /* main.m in Sources */,
 				18B90BC322DEF54200006D85 /* HIFoundation.m in Sources */,
+				18B90BD622E160D200006D85 /* HIUserDefaults.m in Sources */,
 				18B90BA922DDCD9200006D85 /* AppDelegate.m in Sources */,
 				18B90BC722DEF70900006D85 /* HIApplication.m in Sources */,
 				18B90BCA22DEF9E200006D85 /* HIColor.m in Sources */,
